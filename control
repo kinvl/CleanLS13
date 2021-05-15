@@ -1,0 +1,9 @@
+Package: com.kinvl.cleanls13
+Name: CleanLS13
+Version: 1.0.0
+Architecture: iphoneos-arm
+Description: Simple tweak for cleaning your LS.
+Maintainer: Krzysztof Kinal
+Author: Krzysztof Kinal
+Section: Tweaks
+Depends: mobilesubstrate (>= 0.9.5000), ws.hbang.common (>= 1.17)

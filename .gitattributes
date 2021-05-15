@@ -1,2 +1,2 @@
-*.makefile linguist-detectable=false
-*.logos linguist-detectable=false
+*.x linguist-detectable=false
+/Makefile linguist-detectable=false

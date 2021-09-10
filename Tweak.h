@@ -5,3 +5,5 @@
 
 @interface SBFLockScreenDateSubtitleDateView : UIView
 @end
+
+bool boolForPrefsEntry(NSString*);

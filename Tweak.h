@@ -1,6 +1,9 @@
 #import <UIKit/UIKit.h>
 
-//BOOL hideLSLockpad = YES;
-
 @interface SBUIProudLockIconView : UIView
 @end
+
+@interface SBFLockScreenDateSubtitleDateView : UIView
+@end
+
+bool boolForPrefsEntry(NSString*);

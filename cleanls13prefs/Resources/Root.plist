@@ -4,6 +4,13 @@
 <dict>
 	<key>items</key>
 	<array>
+	<!-- CUSTOMIZATION -->
+		<dict>
+			<key>cell</key>
+			<string>PSGroupCell</string>
+			<key>label</key>
+			<string>CUSTOMIZATION</string>
+		</dict>
 		<dict>
 			<key>cell</key>
 			<string>PSSwitchCell</string>
@@ -12,7 +19,7 @@
 			<key>defaults</key>
 			<string>com.kinvl.cleanls13prefs</string>
 			<key>key</key>
-			<string>hidePadlock</string>
+			<string>IsPadlockHidden</string>
 			<key>default</key>
 			<false/>
 		</dict>
@@ -20,43 +27,172 @@
 			<key>cell</key>
 			<string>PSSwitchCell</string>
 			<key>label</key>
-			<string>Shrink date</string>
+			<string>Change date font size</string>
 			<key>defaults</key>
 			<string>com.kinvl.cleanls13prefs</string>
 			<key>key</key>
-			<string>shrinkDate</string>
+			<string>IsDateSizeAdjusted</string>
 			<key>default</key>
 			<false/>
 		</dict>
 		<dict>
 			<key>cell</key>
-			<string>PSSwitchCell</string>
-			<key>label</key>
-			<string>Hide unlock text</string>
+			<string>PSSliderCell</string>
+			<key>min</key>
+			<integer>10</integer>
+			<key>max</key>
+			<integer>28</integer>
+			<key>default</key>
+			<integer>22</integer>
+			<key>showValue</key>
+			<true/>
+			<key>isSegmented</key>
+			<true/>
 			<key>defaults</key>
 			<string>com.kinvl.cleanls13prefs</string>
 			<key>key</key>
-			<string>hideUnlockText</string>
+			<string>DateSubtitleFontSize</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSSwitchCell</string>
+			<key>label</key>
+			<string>Hide "Swipe up to unlock"</string>
+			<key>defaults</key>
+			<string>com.kinvl.cleanls13prefs</string>
+			<key>key</key>
+			<string>IsCallToActionHidden</string>
 			<key>default</key>
 			<false/>
 		</dict>
+		<!-- QUICK ACTIONS -->
+		<!-- LEFT QUICK ACTION -->
 		<dict>
 			<key>cell</key>
 			<string>PSGroupCell</string>
 			<key>label</key>
-			<string></string>
+			<string>LEFT QUICK ACTION</string>
 		</dict>
 		<dict>
 			<key>cell</key>
-			<string>PSStaticTextCell</string>
+			<string>PSSwitchCell</string>
 			<key>label</key>
-			<string>Respring is required after each change.</string>
+			<string>Enabled</string>
+			<key>defaults</key>
+			<string>com.kinvl.cleanls13prefs</string>
+			<key>key</key>
+			<string>IsLeftQuickActionEnabled</string>
+			<key>default</key>
+			<false/>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSSwitchCell</string>
+			<key>label</key>
+			<string>Hidden</string>
+			<key>defaults</key>
+			<string>com.kinvl.cleanls13prefs</string>
+			<key>key</key>
+			<string>IsLeftQuickActionHidden</string>
+			<key>default</key>
+			<false/>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSLinkListCell</string>
+			<key>defaults</key>
+			<string>com.kinvl.cleanls13prefs</string>
+			<key>label</key>
+			<string>Application</string>
+			<key>detail</key>
+			<string>ATLApplicationListSelectionController</string>
+			<key>key</key>
+			<string>LeftQuickActionApplication</string>
+			<key>cellClass</key>
+			<string>ATLApplicationSelectionCell</string>
+			<key>sections</key>
+			<array>
+				<dict>
+					<key>sectionType</key>
+					<string>Visible</string>
+				</dict>
+			</array>
+			<key>useSearchBar</key>
+			<true/>
+			<key>showIdentifiersAsSubtitle</key>
+			<true/>
+			<key>includeIdentifiersInSearch</key>
+			<true/>
+		</dict>
+		<!-- RIGHT QUICK ACTION -->
+		<dict>
+			<key>cell</key>
+			<string>PSGroupCell</string>
+			<key>label</key>
+			<string>RIGHT QUICK ACTION</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSSwitchCell</string>
+			<key>label</key>
+			<string>Enabled</string>
+			<key>defaults</key>
+			<string>com.kinvl.cleanls13prefs</string>
+			<key>key</key>
+			<string>IsRightQuickActionEnabled</string>
+			<key>default</key>
+			<false/>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSSwitchCell</string>
+			<key>label</key>
+			<string>Hidden</string>
+			<key>defaults</key>
+			<string>com.kinvl.cleanls13prefs</string>
+			<key>key</key>
+			<string>IsRightQuickActionHidden</string>
+			<key>default</key>
+			<false/>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSLinkListCell</string>
+			<key>defaults</key>
+			<string>com.kinvl.cleanls13prefs</string>
+			<key>label</key>
+			<string>Application</string>
+			<key>detail</key>
+			<string>ATLApplicationListSelectionController</string>
+			<key>key</key>
+			<string>RightQuickActionApplication</string>
+			<key>cellClass</key>
+			<string>ATLApplicationSelectionCell</string>
+			<key>sections</key>
+			<array>
+				<dict>
+					<key>sectionType</key>
+					<string>Visible</string>
+				</dict>
+			</array>
+			<key>useSearchBar</key>
+			<true/>
+			<key>showIdentifiersAsSubtitle</key>
+			<true/>
+			<key>includeIdentifiersInSearch</key>
+			<true/>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSGroupCell</string>
+			<key>footerText</key>
+			<string>Respring is required after each change</string>
 		</dict>
 		<dict>
 			<key>cell</key>
 			<string>PSButtonCell</string>
 			<key>label</key>
-			<string>Restart SpringBoard</string>
+			<string>Restart Springboard</string>
 			<key>action</key>
 			<string>respring</string>
 		</dict>

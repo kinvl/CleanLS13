@@ -1,0 +1,11 @@
+#define IS_PADLOCK_HIDDEN @"IsPadlockHidden"
+#define IS_DATE_SIZE_ADJUSTED @"IsDateSizeAdjusted"
+#define DATE_FONT_SIZE @"DateSubtitleFontSize"
+#define IS_CALL_TO_ACTION_HIDDEN @"IsCallToActionHidden"
+
+#define IS_LEFT_QA_ENABLED @"IsLeftQuickActionEnabled"
+#define IS_LEFT_QA_HIDDEN @"IsLeftQuickActionHidden"
+#define LEFT_APPLICATION_KEY @"LeftQuickActionApplication"
+#define IS_RIGHT_QA_ENABLED @"IsRightQuickActionEnabled"
+#define IS_RIGHT_QA_HIDDEN @"IsRightQuickActionHidden"
+#define RIGHT_APPLICATION_KEY @"RightQuickActionApplication"
